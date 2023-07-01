@@ -1,0 +1,27 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/BYSYS/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto a10874853dee4b59ba30e1d3171ddd64 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_3 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot gen_PWMTB_behav xil_defaultlib.gen_PWMTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'xclock' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:64]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'fclock' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:71]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wave' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/SPWM.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'fclock' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:66]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'fclock' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:68]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pwm_gen
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_output_stage(...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_3.blk_mem_gen_v8_4_3(C_FAMILY="art...
+Compiling module xil_defaultlib.rom_sin
+Compiling module xil_defaultlib.DDS
+Compiling module xil_defaultlib.SPWM
+Compiling module xil_defaultlib.PWM1
+Compiling module xil_defaultlib.gen_PWMTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot gen_PWMTB_behav

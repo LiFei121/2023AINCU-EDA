@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 24 10:29:16 2023
+# Process ID: 2892
+# Current directory: C:/Users/lifei/Desktop/FPGA/ss/SPWM/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9260 C:\Users\lifei\Desktop\FPGA\ss\SPWM\PWM\PWM.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/ss/SPWM/PWM/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/ss/SPWM/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/ss/SPWM/PWM/PWM.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/lifei/Desktop/FPGA/SPWM/PWM' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/sin.coe'; using path 'C:/Users/lifei/Desktop/sin.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/name.tcl'; using path 'C:/Users/lifei/Desktop/name.tcl' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/sin.coe'; using path 'C:/Users/lifei/Desktop/sin.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/name.tcl'; using path 'C:/Users/lifei/Desktop/name.tcl' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/name.tcl'; using path 'C:/Users/lifei/Desktop/name.tcl' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/name.tcl'; using path 'C:/Users/lifei/Desktop/name.tcl' instead.
+INFO: [filemgmt 56-1] impl_1 strategy "Vivado Implementation Defaults," step write_bitstream, attribute : File not found as 'C:/Users/lifei/Desktop/FPGA/name.tcl'; using path 'C:/Users/lifei/Desktop/name.tcl' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/sin.coe'; using path 'C:/Users/lifei/Desktop/sin.coe' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/lifei/Desktop/FPGA/name.tcl'; using path 'C:/Users/lifei/Desktop/name.tcl' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/BYSYS/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 872.656 ; gain = 185.941
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 10:29:51 2023...

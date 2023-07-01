@@ -1,0 +1,18 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/BYSYS/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 80793dff977e4b4dacbdbf79d6619645 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot _adderTB_behav xil_defaultlib._adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'probe0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:38]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'probe1' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:39]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'probe4' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder_
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib._adderTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot _adderTB_behav

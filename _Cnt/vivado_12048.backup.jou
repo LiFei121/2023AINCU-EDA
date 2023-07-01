@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri May 12 07:45:37 2023
+# Process ID: 12048
+# Current directory: C:/Users/lifei/Desktop/FPGA/_Cnt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10916 C:\Users\lifei\Desktop\FPGA\_Cnt\_Cnt.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/_Cnt/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/_Cnt\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/_Cnt/_Cnt.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config C:/Users/lifei/Desktop/FPGA/_Cnt/_Cnt_TB_behav.wcfg
+source _Cnt_TB.tcl
+run all
+run all
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/_Cnt/_Cnt.runs/impl_1/_Cnt.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/_Cnt/_Cnt.runs/impl_1/_Cnt.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim

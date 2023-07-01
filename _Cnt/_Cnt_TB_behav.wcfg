@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="_Cnt_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="_Cnt_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="552500001fs"></ZoomEndTime>
+      <Cursor1Time time="670588000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="271"></NameColumnWidth>
+      <ValueColumnWidth column_width="152"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/_Cnt_TB/clk1" type="logic">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/_Cnt_TB/en" type="logic">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/_Cnt_TB/RST_n" type="logic">
+      <obj_property name="ElementShortName">RST_n</obj_property>
+      <obj_property name="ObjectShortName">RST_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/_Cnt_TB/Mclock" type="logic">
+      <obj_property name="ElementShortName">Mclock</obj_property>
+      <obj_property name="ObjectShortName">Mclock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/_Cnt_TB/M_SET" type="array">
+      <obj_property name="ElementShortName">M_SET[4:0]</obj_property>
+      <obj_property name="ObjectShortName">M_SET[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/_Cnt_TB/cnt_count" type="array">
+      <obj_property name="ElementShortName">cnt_count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_count[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/_Cnt_TB/Led" type="logic">
+      <obj_property name="ElementShortName">Led</obj_property>
+      <obj_property name="ObjectShortName">Led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/_Cnt_TB/display_segout" type="array">
+      <obj_property name="ElementShortName">display_segout[10:0]</obj_property>
+      <obj_property name="ObjectShortName">display_segout[10:0]</obj_property>
+   </wvobject>
+</wave_config>

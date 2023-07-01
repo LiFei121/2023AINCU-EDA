@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 11 14:16:49 2023
+# Process ID: 1972
+# Current directory: C:/Users/lifei/Desktop/FPGA/f_adder/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12868 C:\Users\lifei\Desktop\FPGA\f_adder\adder\adder.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/f_adder/adder/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/f_adder/adder\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.xpr
+uupdate_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+launch_simulation -simset [get_filesets sim_2 ]
+source _adderTB.tcl
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+close_sim

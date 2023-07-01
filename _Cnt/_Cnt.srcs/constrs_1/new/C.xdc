@@ -1,0 +1,6 @@
+set_property PACKAGE_PIN U3 [get_ports {cnt_count[0]}]
+set_property PACKAGE_PIN P3 [get_ports {cnt_count[1]}]
+set_property PACKAGE_PIN N3 [get_ports {cnt_count[2]}]
+set_property PACKAGE_PIN P1 [get_ports {cnt_count[3]}]
+set_property PACKAGE_PIN L1 [get_ports {cnt_count[4]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {cnt_count[4]}]

@@ -1,0 +1,16 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/BYSYS/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f346720f932f41db9185ac5b762050d5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot All_TB_behav xil_defaultlib.All_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/lifei/Desktop/FPGA/state/State.srcs/sources_1/new/All.v" Line 1. Module All doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Gen
+Compiling module xil_defaultlib.Det
+Compiling module xil_defaultlib.All
+Compiling module xil_defaultlib.All_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot All_TB_behav

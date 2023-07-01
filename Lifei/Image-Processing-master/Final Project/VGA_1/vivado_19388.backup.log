@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jun 14 08:58:09 2023
+# Process ID: 19388
+# Current directory: C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4204 C:\Users\lifei\Desktop\Lifei\Image-Processing-master\Final Project\VGA_1\VGA_1.xpr
+# Log file: C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/vivado.log
+# Journal file: C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/BYSYS/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 853.199 ; gain = 172.840
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/lifein.coe' provided. It will be converted relative to IP Instance files '../../../../../lifein.coe'
+set_property -dict [list CONFIG.Coe_File {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/lifein.coe}] [get_ips blk_mem_gen_2]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/lifein.coe' provided. It will be converted relative to IP Instance files '../../../../../lifein.coe'
+generate_target all [get_files  {{C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_2'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_2'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_2'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_2'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_2'...
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_2] }
+export_ip_user_files -of_objects [get_files {{C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_2_synth_1
+launch_runs -jobs 4 blk_mem_gen_2_synth_1
+[Wed Jun 14 09:02:41 2023] Launched blk_mem_gen_2_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/blk_mem_gen_2_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -directory {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.ip_user_files} -ipstatic_source_dir {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.cache/compile_simlib/modelsim} {questa=C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.cache/compile_simlib/questa} {riviera=C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.cache/compile_simlib/riviera} {activehdl=C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Wed Jun 14 09:04:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/synth_1/runme.log
+[Wed Jun 14 09:04:55 2023] Launched impl_1...
+Run output will be captured here: C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jun 14 09:06:39 2023] Launched impl_1...
+Run output will be captured here: C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.runs/impl_1/vga_syncIndex.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA1.v} w ]
+add_files {{C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA1.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA1.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA1.v}}
+close [ open {C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA_Control.v} w ]
+add_files {{C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA_Control.v}}
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 14 13:58:51 2023...

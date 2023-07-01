@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../VGA_1.srcs/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v" \
+"../../../../VGA_1.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v" \
+"../../../../VGA_1.srcs/sources_1/ip/image/sim/image.v" \
+"../../../../VGA_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../VGA_1.srcs/sources_1/new/VGA.v" \
+"../../../../VGA_1.srcs/sim_1/new/TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

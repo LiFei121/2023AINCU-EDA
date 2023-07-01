@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 10 19:26:39 2023
+# Process ID: 26396
+# Current directory: C:/Users/lifei/Desktop/FPGA/f_adder/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8652 C:\Users\lifei\Desktop\FPGA\f_adder\adder\adder.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/f_adder/adder/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/f_adder/adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.xpr
+update_compile_order -fileset sources_1

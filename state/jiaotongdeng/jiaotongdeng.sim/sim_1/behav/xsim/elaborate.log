@@ -1,0 +1,8 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/BYSYS/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f778aecd8bb54770a9ece31b9e5d0874 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Testbench_behav xil_defaultlib.Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'sw' [C:/Users/lifei/Desktop/FPGA/state/jiaotongdeng/jiaotongdeng.srcs/sim_1/new/Testbench.v:47]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

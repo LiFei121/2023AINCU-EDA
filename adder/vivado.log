@@ -1,0 +1,213 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May 11 14:16:49 2023
+# Process ID: 1972
+# Current directory: C:/Users/lifei/Desktop/FPGA/f_adder/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12868 C:\Users\lifei\Desktop\FPGA\f_adder\adder\adder.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/f_adder/adder/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/f_adder/adder\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/BYSYS/Vivado/2019.1/data/ip'.
+oopen_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 822.969 ; gain = 198.395uupdate_compile_order -fileset sources_1esynth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: adder
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1256.504 ; gain = 160.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:22]
+INFO: [Synth 8-6157] synthesizing module 'adder_' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder_.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_' (1#1) [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder_.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:36]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/.Xil/Vivado-1972-LAPTOP-RP081SHI/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (2#1) [C:/Users/lifei/Desktop/FPGA/f_adder/adder/.Xil/Vivado-1972-LAPTOP-RP081SHI/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'probe0' does not match port width (1) of module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:38]
+WARNING: [Synth 8-689] width (4) of port connection 'probe1' does not match port width (1) of module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:39]
+WARNING: [Synth 8-689] width (4) of port connection 'probe4' does not match port width (1) of module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:42]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:36]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u4'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:33]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u3'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:32]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u2'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:31]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u1'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (3#1) [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1300.027 ; gain = 204.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1300.027 ; gain = 204.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1300.027 ; gain = 204.145
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 598 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: a[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets a[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: a[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets a[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: b[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets b[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: b[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets b[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: cin
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets cin]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: cin
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets cin]
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/constrs_1/new/add.xdc]
+Finished Parsing XDC File [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/constrs_1/new/add.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1481.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 360 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 328 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1481.586 ; gain = 385.703
+20 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1481.586 ; gain = 601.402
+launch_simulation -simset [get_filesets sim_2 ]
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/BYSYS/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for '_adderTB' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+"xvlog --incr --relax -prj _adderTB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder_.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sim_2/new/_adderTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module _adderTB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+"xelab -wto 80793dff977e4b4dacbdbf79d6619645 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot _adderTB_behav xil_defaultlib._adderTB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/BYSYS/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 80793dff977e4b4dacbdbf79d6619645 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot _adderTB_behav xil_defaultlib._adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'probe0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:38]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'probe1' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:39]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'probe4' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder_
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib._adderTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot _adderTB_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim/xsim.dir/_adderTB_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim/xsim.dir/_adderTB_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu May 11 15:16:25 2023. For additional details about this file, please refer to the WebTalk help file at D:/BYSYS/Vivado/2019.1/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.594 ; gain = 18.016
+INFO: [Common 17-206] Exiting Webtalk at Thu May 11 15:16:25 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1529.945 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "_adderTB_behav -key {Behavioral:sim_2:Functional:_adderTB} -tclbatch {_adderTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source _adderTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 110 ns : File "C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sim_2/new/_adderTB.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot '_adderTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1544.461 ; gain = 32.367
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'your_instance_name' at location 'uuid_C43761E0C03650398C6907A263A83E64' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2709.645 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 11 16:28:48 2023...

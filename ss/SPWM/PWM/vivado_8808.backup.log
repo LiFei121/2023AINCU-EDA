@@ -1,0 +1,353 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 24 08:42:35 2023
+# Process ID: 8808
+# Current directory: C:/Users/lifei/Desktop/FPGA/SPWM/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9260 C:\Users\lifei\Desktop\FPGA\SPWM\PWM\PWM.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/SPWM/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/BYSYS/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 862.285 ; gain = 182.266
+update_compile_order -fileset sources_1
+close [ open C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwmz.v w ]
+add_files C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwmz.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Wed May 24 08:46:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/synth_1/runme.log
+[Wed May 24 08:46:07 2023] Launched impl_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 24 08:48:09 2023] Launched impl_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'U5' at location 'uuid_531613B5025D5399AB63E5A088B84FC7' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:18:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:18:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:19:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:19:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:19:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:19:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:19:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:19:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:19:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:19:58
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:20:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:20:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:20:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:20:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:20:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:20:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-24 09:33:06
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-24 09:33:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May 24 09:37:45 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_2/new/PWM1.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_2 C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_2/new/PWM1.xdc
+save_wave_config {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE4_WIDTH {10}] [get_ips ila_0]
+generate_target all [get_files  C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 4 ila_0_synth_1
+[Wed May 24 09:38:48 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.ip_user_files -ipstatic_source_dir C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/modelsim} {questa=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/questa} {riviera=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/riviera} {activehdl=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run ila_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May 24 09:43:10 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/ila_0_synth_1/runme.log
+[Wed May 24 09:43:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_DATA_DEPTH {4096}] [get_ips ila_0]
+generate_target all [get_files  C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+reset_run ila_0_synth_1
+launch_runs -jobs 4 ila_0_synth_1
+[Wed May 24 09:46:50 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.ip_user_files -ipstatic_source_dir C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/modelsim} {questa=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/questa} {riviera=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/riviera} {activehdl=C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -jobs 4
+[Wed May 24 09:49:43 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/synth_1/runme.log
+[Wed May 24 09:49:43 2023] Launched impl_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: PWM1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 5490.711 ; gain = 73.457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PWM1' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:23]
+	Parameter T1MS bound to: 50000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pwm_gen' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwm_gen.v:23]
+WARNING: [Synth 8-5788] Register period_reg in module pwm_gen is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwm_gen.v:84]
+WARNING: [Synth 8-5788] Register h_time_reg in module pwm_gen is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwm_gen.v:84]
+WARNING: [Synth 8-5788] Register x_time_reg in module pwm_gen is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwm_gen.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_gen' (1#1) [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwm_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pwmz' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwmz.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pwmz' (2#1) [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/pwmz.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SPWM' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/SPWM.v:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/SPWM.v:52]
+INFO: [Synth 8-6157] synthesizing module 'DDS' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/DDS.v:23]
+	Parameter T1MS bound to: 50000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rom_sin' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/.Xil/Vivado-8808-LAPTOP-RP081SHI/realtime/rom_sin_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_sin' (3#1) [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/.Xil/Vivado-8808-LAPTOP-RP081SHI/realtime/rom_sin_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'DDS' (4#1) [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/DDS.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SPWM' (5#1) [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/SPWM.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:78]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/.Xil/Vivado-8808-LAPTOP-RP081SHI/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (6#1) [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/.Xil/Vivado-8808-LAPTOP-RP081SHI/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U1'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U5'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:78]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U2'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:71]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U3'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:73]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'U4'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:76]
+WARNING: [Synth 8-6014] Unused sequential element count2_reg was removed.  [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:61]
+WARNING: [Synth 8-6014] Unused sequential element clk1_reg was removed.  [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'PWM1' (7#1) [C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/new/PWM1.v:23]
+WARNING: [Synth 8-3331] design SPWM has unconnected port fclock
+WARNING: [Synth 8-3331] design SPWM has unconnected port xclock
+WARNING: [Synth 8-3331] design SPWM has unconnected port zclock
+WARNING: [Synth 8-3331] design SPWM has unconnected port f[1]
+WARNING: [Synth 8-3331] design SPWM has unconnected port f[0]
+WARNING: [Synth 8-3331] design SPWM has unconnected port x[1]
+WARNING: [Synth 8-3331] design SPWM has unconnected port x[0]
+WARNING: [Synth 8-3331] design SPWM has unconnected port z[1]
+WARNING: [Synth 8-3331] design SPWM has unconnected port z[0]
+WARNING: [Synth 8-3331] design pwmz has unconnected port fclock
+WARNING: [Synth 8-3331] design pwmz has unconnected port xclock
+WARNING: [Synth 8-3331] design pwmz has unconnected port f[1]
+WARNING: [Synth 8-3331] design pwmz has unconnected port f[0]
+WARNING: [Synth 8-3331] design pwmz has unconnected port x[1]
+WARNING: [Synth 8-3331] design pwmz has unconnected port x[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 5581.336 ; gain = 164.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 5608.637 ; gain = 191.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 5608.637 ; gain = 191.383
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'U5'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/rom_sin/rom_sin.dcp' for cell 'U4/u0/romsin'
+INFO: [Netlist 29-17] Analyzing 89 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'U5/inst'
+Finished Parsing XDC File [c:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'U5/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 5791.434 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 52 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 52 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 5791.434 ; gain = 374.180
+29 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:24 . Memory (MB): peak = 5791.434 ; gain = 560.211
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+place_ports {dataout[0]} U16
+place_ports {dataout[1]} E19
+place_ports {dataout[2]} U19
+place_ports {dataout[3]} V19
+place_ports {dataout[4]} W18
+place_ports {dataout[5]} U15
+place_ports {dataout[6]} U14
+place_ports {dataout[7]} V14
+place_ports {dataout[8]} V13
+place_ports {dataout[9]} V3
+place_ports {f[0]} V17
+place_ports fclock V16
+startgroup
+set_property package_pin "" [get_ports [list  fclock]]
+place_ports {f[1]} V16
+endgroup
+place_ports fclock W16
+place_ports pwm1 W17
+place_ports pwm1 L1
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm1]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list fclock]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[9]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[8]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[7]}]]
+place_ports pwm2 P1
+place_ports pwm3 N3
+place_ports pwm4 P3
+place_ports rst_n R2
+place_ports {x[0]} W17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {x[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm4]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm3]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm2]]
+place_ports {x[1]} W15
+set_property IOSTANDARD LVCMOS33 [get_ports [list {x[1]}]]
+place_ports xclock V15
+set_property IOSTANDARD LVCMOS33 [get_ports [list xclock]]
+place_ports {z[0]} W14
+place_ports {z[1]} W13
+set_property IOSTANDARD LVCMOS33 [get_ports [list {z[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {z[1]}]]
+place_ports zclock V2
+set_property IOSTANDARD LVCMOS33 [get_ports [list zclock]]
+close [ open C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_2/new/PWM1.xdc w ]
+add_files -fileset constrs_2 C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_2/new/PWM1.xdc
+set_property target_constrs_file C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_2/new/PWM1.xdc [current_fileset -constrset]
+save_constraints -force
+export_ip_user_files -of_objects  [get_files C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_2/new/PWM1.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_2 C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_2/new/PWM1.xdc
+set_property IOSTANDARD LVCMOS25 [get_ports [list rst_n]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+save_constraints_as constrs_3 -target_constrs_file PWM1.xdc
+INFO: [Project 1-239] Creating target file 'C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_3/new/PWM1.xdc' for the 'constrs_3' constraints set.
+INFO: [Project 1-96] Target constrs file set to 'C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.srcs/constrs_3/new/PWM1.xdc' for the 'constrs_3' constraints set.
+set_property constrset constrs_3 [get_runs synth_1]
+set_property constrset constrs_3 [get_runs impl_1]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+save_constraints
+set_property IOSTANDARD LVCMOS33 [get_ports [list xclock]]
+save_constraints
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 24 09:57:53 2023...

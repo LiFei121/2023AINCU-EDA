@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  2 15:25:23 2023
+# Process ID: 15796
+# Current directory: C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.runs/rom_ip_synth_1
+# Command line: vivado.exe -log rom_ip.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom_ip.tcl
+# Log file: C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.runs/rom_ip_synth_1/rom_ip.vds
+# Journal file: C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.runs/rom_ip_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rom_ip.tcl -notrace

@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sim_1/new/gen_PWMTB.v,1684838232,verilog,,,,gen_PWMTB,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/ip/rom_sin/rom_sin_sim_netlist.v,1684807020,verilog,,C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/DDS.v,,rom_sin;rom_sin_blk_mem_gen_generic_cstr;rom_sin_blk_mem_gen_prim_width;rom_sin_blk_mem_gen_prim_wrapper_init;rom_sin_blk_mem_gen_top;rom_sin_blk_mem_gen_v8_4_3;rom_sin_blk_mem_gen_v8_4_3_synth,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/DDS.v,1684764021,verilog,,C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/PWM1.v,,DDS,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/PWM1.v,1684836930,verilog,,C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/SPWM.v,,PWM1,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/SPWM.v,1685087500,verilog,,C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/pwm_gen.v,,SPWM,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sources_1/new/pwm_gen.v,1685087500,verilog,,C:/Users/lifei/Desktop/FPGA/ss/SPWM1/PWM/PWM.srcs/sim_1/new/gen_PWMTB.v,,pwm_gen,,,,,,,,

@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 19 11:25:01 2023
+# Process ID: 12104
+# Current directory: C:/Users/lifei/Desktop/FPGA/traffic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11280 C:\Users\lifei\Desktop\FPGA\traffic\traffic.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/traffic/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/traffic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/traffic/traffic.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/traffic/traffic.runs/impl_1/traffic.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/traffic/traffic.runs/impl_1/traffic.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+launch_simulation
+open_wave_config C:/Users/lifei/Desktop/FPGA/traffic/traffic_tb_behav.wcfg
+source traffic_tb.tcl
+run all
+close_sim

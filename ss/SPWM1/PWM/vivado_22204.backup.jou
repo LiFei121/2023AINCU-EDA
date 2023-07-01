@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 23 18:12:50 2023
+# Process ID: 22204
+# Current directory: C:/Users/lifei/Desktop/FPGA/SPWM1/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30352 C:\Users\lifei\Desktop\FPGA\SPWM1\PWM\PWM.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/SPWM1/PWM/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/SPWM1/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/SPWM1/PWM/PWM.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source gen_PWMTB.tcl
+run all
+close_sim
+launch_simulation
+source gen_PWMTB.tcl
+close_sim
+launch_simulation
+source gen_PWMTB.tcl
+run all
+close_sim
+launch_simulation
+source gen_PWMTB.tcl
+run all
+close_sim
+launch_simulation
+source gen_PWMTB.tcl
+run all
+close_sim
+launch_simulation
+source gen_PWMTB.tcl
+run all
+reset_run impl_1 -prev_step 
+close_sim
+launch_simulation
+source gen_PWMTB.tcl
+close_sim

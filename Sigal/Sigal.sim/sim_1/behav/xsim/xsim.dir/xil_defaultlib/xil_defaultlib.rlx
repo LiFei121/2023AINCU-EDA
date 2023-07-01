@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.srcs/sim_1/new/vtf_rom_tb.v,1683013158,verilog,,,,vtf_rom_tb,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.srcs/sources_1/ip/rom_ip/sim/rom_ip.v,1683012320,verilog,,C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.srcs/sources_1/new/rom_test.v,,rom_ip,,,,,,,,
+C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.srcs/sources_1/new/rom_test.v,1683013070,verilog,,C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.srcs/sim_1/new/vtf_rom_tb.v,,rom_test,,,,,,,,

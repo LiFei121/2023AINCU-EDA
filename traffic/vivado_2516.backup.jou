@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat May 13 10:13:28 2023
+# Process ID: 2516
+# Current directory: C:/Users/lifei/Desktop/FPGA/traffic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3576 C:\Users\lifei\Desktop\FPGA\traffic\traffic.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/traffic/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/traffic\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/traffic/traffic.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+launch_simulation
+open_wave_config C:/Users/lifei/Desktop/FPGA/traffic/traffic_tb_behav.wcfg
+source traffic_tb.tcl
+run all
+close_sim

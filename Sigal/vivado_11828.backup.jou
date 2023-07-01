@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  2 15:33:01 2023
+# Process ID: 11828
+# Current directory: C:/Users/lifei/Desktop/FPGA/Sigal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6956 C:\Users\lifei\Desktop\FPGA\Sigal\Sigal.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/Sigal/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/Sigal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/Sigal/Sigal.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source vtf_rom_tb.tcl
+close_sim
+launch_simulation
+source vtf_rom_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source vtf_rom_tb.tcl
+close_sim

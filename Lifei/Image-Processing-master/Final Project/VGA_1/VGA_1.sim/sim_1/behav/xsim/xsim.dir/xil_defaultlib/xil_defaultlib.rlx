@@ -1,0 +1,11 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sim_1/new/TB.v,1686701030,verilog,,,,TB,,,,,,,,
+C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1686655600,verilog,,C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA.v,,blk_mem_gen_0,,,,,,,,
+C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1686656770,verilog,,C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/sim/image.v,,blk_mem_gen_1,,,,,,,,
+C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_2/sim/blk_mem_gen_2.v,1686666171,verilog,,C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,,blk_mem_gen_2,,,,,,,,
+C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/image/sim/image.v,1686562622,verilog,,C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,image,,,,,,,,
+C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sources_1/new/VGA.v,1686666374,verilog,,C:/Users/lifei/Desktop/Lifei/Image-Processing-master/Final Project/VGA_1/VGA_1.srcs/sim_1/new/TB.v,,vga_syncIndex,,,,,,,,

@@ -1,0 +1,514 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May  2 17:27:45 2023
+# Process ID: 16428
+# Current directory: C:/Users/lifei/Desktop/FPGA/f_adder/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5696 C:\Users\lifei\Desktop\FPGA\f_adder\adder\adder.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/f_adder/adder/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/f_adder/adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/BYSYS/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation -simset [get_filesets sim_2 ]
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for '_adderTB' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+"xvlog --incr --relax -prj _adderTB_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+"xelab -wto 80793dff977e4b4dacbdbf79d6619645 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot _adderTB_behav xil_defaultlib._adderTB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/BYSYS/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 80793dff977e4b4dacbdbf79d6619645 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot _adderTB_behav xil_defaultlib._adderTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "_adderTB_behav -key {Behavioral:sim_2:Functional:_adderTB} -tclbatch {_adderTB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source _adderTB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 110 ns : File "C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sim_2/new/_adderTB.v" Line 18
+INFO: [USF-XSim-96] XSim completed. Design snapshot '_adderTB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1012.797 ; gain = 26.812
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'adder' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:27]
+[Tue May  2 17:32:36 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting value property on PARAM_VALUE.ALL_PROBE_SAME_MU is not allowed in procedure update_gui_for_PARAM_VALUE.C_ADV_TRIGGER
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {6} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_ADV_TRIGGER {true} CONFIG.C_PROBE5_MU_CNT {2} CONFIG.C_PROBE4_MU_CNT {2} CONFIG.C_PROBE3_MU_CNT {2} CONFIG.C_PROBE2_MU_CNT {2} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+generate_target all [get_files  c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs -jobs 4 ila_0_synth_1
+[Tue May  2 17:33:47 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.ip_user_files -ipstatic_source_dir C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/modelsim} {questa=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/questa} {riviera=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/riviera} {activehdl=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'adder' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:27]
+[Tue May  2 17:35:07 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/ila_0_synth_1/runme.log
+[Tue May  2 17:35:07 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1
+
+reset_run ila_0_synth_1
+export_ip_user_files -of_objects  [get_files c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset ila_0 c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci
+INFO: [Project 1-386] Moving file 'c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+launch_runs synth_1 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'adder' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:27]
+[Tue May  2 17:35:51 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting value property on PARAM_VALUE.ALL_PROBE_SAME_MU is not allowed in procedure update_gui_for_PARAM_VALUE.C_ADV_TRIGGER
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {5} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_ADV_TRIGGER {true} CONFIG.C_PROBE4_MU_CNT {2} CONFIG.C_PROBE3_MU_CNT {2} CONFIG.C_PROBE2_MU_CNT {2} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+generate_target all [get_files  c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0.xci]
+launch_runs -jobs 4 ila_0_synth_1
+[Tue May  2 17:36:20 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0.xci] -directory C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.ip_user_files -ipstatic_source_dir C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/modelsim} {questa=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/questa} {riviera=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/riviera} {activehdl=C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting value property on PARAM_VALUE.ALL_PROBE_SAME_MU is not allowed in procedure update_gui_for_PARAM_VALUE.C_ADV_TRIGGER
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+WARNING: [HDL 9-3756] overwriting previous definition of module 'adder' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:27]
+[Tue May  2 17:37:29 2023] Launched ila_0_synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/ila_0_synth_1/runme.log
+[Tue May  2 17:37:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May  2 17:38:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/synth_1/runme.log
+[Tue May  2 17:38:46 2023] Launched impl_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: adder
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2303.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'adder_' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder_.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder_' (1#1) [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder_.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:35]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/.Xil/Vivado-16428-LAPTOP-RP081SHI/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (2#1) [C:/Users/lifei/Desktop/FPGA/f_adder/adder/.Xil/Vivado-16428-LAPTOP-RP081SHI/realtime/ila_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'probe0' does not match port width (1) of module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:39]
+WARNING: [Synth 8-689] width (4) of port connection 'probe1' does not match port width (1) of module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:40]
+WARNING: [Synth 8-689] width (4) of port connection 'probe4' does not match port width (1) of module 'ila_0' [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:43]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'your_instance_name'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:35]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u4'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:32]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u3'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:31]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u2'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:30]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u1'. This will prevent further optimization [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (3#1) [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/new/adder.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2303.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_0.dcp' for cell 'your_instance_name'
+INFO: [Netlist 29-17] Analyzing 598 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: a[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets a[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: a[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets a[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: b[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets b[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: b[0]
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets b[0]]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: cin
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets cin]
+WARNING: [Opt 31-233] Net with MARK_DEBUG TRUE property was optimized: cin
+Resolution: To prevent optimization apply the following XDC constraint before opt_design: set_property DONT_TOUCH TRUE [get_nets cin]
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Finished Parsing XDC File [c:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/sources_1/ip/ila_0_1/ila_v6_2/constraints/ila.xdc] for cell 'your_instance_name/inst'
+Parsing XDC File [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/constrs_1/new/add.xdc]
+Finished Parsing XDC File [C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.srcs/constrs_1/new/add.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2303.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 360 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 328 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 32 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 2303.910 ; gain = 0.000
+20 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2303.910 ; gain = 153.863
+place_ports clk W5
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May  2 17:44:33 2023] Launched impl_1...
+Run output will be captured here: C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B5A07FA
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'your_instance_name' at location 'uuid_C43761E0C03650398C6907A263A83E64' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:47:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:47:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:47:19
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:47:19
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:47:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:47:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:07
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:07
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:08
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:10
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:10
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:12
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:12
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:17
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:17
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:18
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:20
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:27
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:27
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:30
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:34
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:34
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:44
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:44
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:47
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:47
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:51
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:51
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:53
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:48:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:48:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {a_IBUF} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {a_IBUF} }
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {a_IBUF} }
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes a_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:53:23
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:54:33
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes a_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:55:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:55:04
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes a_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:55:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:55:24
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes b_IBUF -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-May-02 17:56:15
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"your_instance_name"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-May-02 17:56:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {C:/Users/lifei/Desktop/FPGA/f_adder/adder/adder.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3642.254 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  2 17:56:39 2023...

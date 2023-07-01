@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 24 09:58:02 2023
+# Process ID: 14656
+# Current directory: C:/Users/lifei/Desktop/FPGA/SPWM/PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4040 C:\Users\lifei\Desktop\FPGA\SPWM\PWM\PWM.xpr
+# Log file: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/vivado.log
+# Journal file: C:/Users/lifei/Desktop/FPGA/SPWM/PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+place_ports clk W5
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+place_ports {dataout[0]} U16
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[0]}]]
+place_ports {dataout[1]} E19
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[1]}]]
+place_ports {dataout[2]} U19
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[2]}]]
+place_ports {dataout[3]} V19
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[3]}]]
+place_ports {dataout[4]} W18
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[4]}]]
+place_ports {dataout[5]} U15
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[5]}]]
+place_ports {dataout[6]} U14
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[6]}]]
+place_ports {dataout[7]} V14
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[7]}]]
+place_ports {dataout[8]} V13
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[8]}]]
+place_ports {dataout[9]} V3
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataout[9]}]]
+place_ports {f[0]} V17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[0]}]]
+place_ports {f[1]} V16
+set_property IOSTANDARD LVCMOS33 [get_ports [list {f[1]}]]
+place_ports fclock W16
+set_property IOSTANDARD LVCMOS33 [get_ports [list fclock]]
+place_ports pwm1 L1
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm1]]
+place_ports pwm2 P1
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm2]]
+place_ports pwm3 N3
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm3]]
+place_ports pwm4 P3
+set_property IOSTANDARD LVCMOS33 [get_ports [list pwm4]]
+place_ports rst_n R2
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst_n]]
+place_ports {x[0]} W17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {x[0]}]]
+place_ports {x[1]} W15
+place_ports xclock V15
+set_property IOSTANDARD LVCMOS33 [get_ports [list {x[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list xclock]]
+place_ports {z[0]} W14
+set_property IOSTANDARD LVCMOS33 [get_ports [list {z[0]}]]
+place_ports {z[1]} W13
+set_property IOSTANDARD LVCMOS33 [get_ports [list {z[1]}]]
+place_ports zclock V2
+set_property IOSTANDARD LVCMOS33 [get_ports [list zclock]]
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {dataout_OBUF} }
+save_wave_config {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/impl_1/PWM1.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"U5"}]]
+save_wave_config {C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

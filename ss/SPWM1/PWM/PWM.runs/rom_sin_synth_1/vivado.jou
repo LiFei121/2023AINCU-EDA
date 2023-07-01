@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 23 09:56:04 2023
+# Process ID: 2020
+# Current directory: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/rom_sin_synth_1
+# Command line: vivado.exe -log rom_sin.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom_sin.tcl
+# Log file: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/rom_sin_synth_1/rom_sin.vds
+# Journal file: C:/Users/lifei/Desktop/FPGA/SPWM/PWM/PWM.runs/rom_sin_synth_1\vivado.jou
+#-----------------------------------------------------------
+source rom_sin.tcl -notrace
